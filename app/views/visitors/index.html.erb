@@ -1,5 +1,6 @@
 <h3>Welcome</h3>
 <p><%= link_to 'Users:', users_path %> <%= User.count %> registered</p>
-<%= link_to @welcome_article.pretty_title, rails_wiki.article_path(@welcome_article) %>
+<%#= link_to @welcome_article.pretty_title, rails_wiki.article_path(@welcome_article) %>
+<%= link_to "Wiki", rails_wiki.articles_path %>
 </br>
 <%= link_to "New Wiki Article", rails_wiki.new_article_path %>
